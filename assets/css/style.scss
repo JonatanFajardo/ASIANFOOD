@@ -1,0 +1,467 @@
+@import url("https://drive.google.com/uc?id=1FFGct-H9pfYLbZMEEliYXfzgfiBOXalc");
+@import url("global_local.css");
+/* @import url(../../../global.css); */
+
+:root {
+  --headerBg: #363637;
+  --headerText: white;
+  --primary_1_2: #3c3c3d;
+  --primary_2_2: #272728;
+  --primaryText_1_2: #e81e3a;
+  --primaryText_2_2: white;
+  --secundary: #e81e3a;
+}   
+
+.header-area {
+  position: relative;
+  height: 70px;
+  .main-menu {
+    width: 100%;
+    height: 70px;
+    background-color: var(--headerBg);
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+    position: fixed;
+    z-index: 6;
+    display: block;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: var(--headerBg);
+  }
+  li a {
+    display: block;
+    /* padding: 20px 20px; */
+    color: var(--headerText);
+    font-family: "Delius", cursive;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  li a:hover,
+  .menu-btn:hover {
+    background-color: #f4f4f46c;
+  }
+  li a:hover,
+  .menu-btn:hover {
+    background-color: rgba(244, 244, 244, 0.396);
+  }
+  /* menu */
+
+  .menu {
+    position: relative;
+    clear: both;
+    max-height: 0;
+    background-color: var(--headerBg);
+    transition: max-height 0.2s ease-out;
+    -webkit-transition: max-height 0.2s ease-out;
+    -moz-transition: max-height 0.2s ease-out;
+    -ms-transition: max-height 0.2s ease-out;
+    -o-transition: max-height 0.2s ease-out;
+  }
+  /* menu icon */
+  .menu-icon {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    float: right;
+    padding: 18px 10px;
+    user-select: none;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    transition: 0, 4;
+    -webkit-transition: 0, 4;
+    -moz-transition: 0, 4;
+    -ms-transition: 0, 4;
+    -o-transition: 0, 4;
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+      background-color: var(--grey-300);
+      transform: scale(1deg);
+      -webkit-transform: scale(1deg);
+      -moz-transform: scale(1deg);
+      -ms-transform: scale(1deg);
+      -o-transform: scale(1deg);
+    }
+  }
+  .menu-icon .navicon {
+    background: white;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+    transition: background 0.2s ease-out;
+    -webkit-transition: background 0.2s ease-out;
+    -moz-transition: background 0.2s ease-out;
+    -ms-transition: background 0.2s ease-out;
+    -o-transition: background 0.2s ease-out;
+  }
+  .menu-icon .navicon:before,
+  .menu-icon .navicon:after {
+    background: white;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all 0.2s ease-out;
+    width: 100%;
+  }
+  .menu-icon .navicon:before {
+    top: 5px;
+  }
+  .menu-icon .navicon:after {
+    top: -5px;
+  }
+  /* menu btn */
+  .menu-btn {
+    display: none;
+  }
+  .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+  .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+}
+/* ===================================================
+                    WELLCOME
+     ===================================================== */
+
+#wellcome {
+  .container {
+    height: 250px;
+  }
+  background-image: url("../img/wellcome2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #2d2d43;
+  background-color: var(--primary_1_2);
+  animation: bunner-img 10s infinite;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  top: -10px;
+  .text {
+    h1 {
+      color: var(--secundary);
+      font-weight: bold;
+      font-size: 70px;
+    }
+    h4 {
+      color: var(--primaryText_2_2);
+      font-family: "Delius", cursive;
+    }
+  }
+}
+/* ===================================================
+                    MENU COMIDA
+     ===================================================== */
+
+#menu {
+  background-color: var(--primary_1_2);
+  color: var(--primaryText_2_2);
+  padding: 4rem 0;
+  /*   .cards-item {
+    color: white;
+  } */
+  .cards-item {
+    color: var(--primaryText_2_2);
+    font-family: "Times New Roman";
+    background-color: var(--primary_2_2);
+    .card-title {
+      color: var(--primaryText_2_2);
+      font-size: 25px;
+      letter-spacing: 3.2px;
+      word-spacing: 2.4px;
+      font-weight: 700;
+    }
+    .card-header {
+      .icon-box {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.5);
+        }
+      }
+      svg {
+        fill: #bd132d;
+      }
+      .icon {
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: all 1s ease-in-out;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        cursor: pointer;
+        transform: translate(-50%, -50%);
+      }
+      &:hover .icon {
+        background-image: url("../img/cart.svg");
+      }
+    }
+    .card-text {
+      font-weight: 400;
+      font-style: italic;
+    }
+    /*   .card-content{
+           
+            flex-direction: row;
+
+        } */
+    /* #btnBuy{
+            text-align: center;
+            background-color: #BD132D;
+            padding: 2rem 1rem;
+            a{
+                color: white;
+            }
+            
+        } */
+    .pattern {
+      background-image: url("../img/bambu.png");
+    }
+    .card-header {
+      height: 200px;
+      @supports (object-fit: cover) {
+        & img {
+          height: 100%;
+          object-fit: cover;
+          object-position: center center;
+        }
+      }
+    }
+  }
+}
+/* ===================================================
+                    RESERVACION
+     ===================================================== */
+
+#reservacion {
+  padding: 4rem 0;
+  background-color: #e81e3a;
+  background-image: url("../img/bambuBg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /*     background-repeat: repeat; */
+  .text {
+    display: block;
+    text-align: center;
+    h1 {
+      color: whvar(--primaryText_2_2) ite;
+    }
+    p {
+      color: var(--primaryText_2_2);
+    }
+  }
+  .col {
+    width: 80%;
+    padding: 2rem;
+  }
+  .datos {
+    margin: auto;
+    max-width: 25rem;
+  }
+  .form {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+  .form input {
+    /* font-family: "Roboto", sans-serif; */
+    font-family: "Delius", cursive;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  .form button {
+    /* font-family: "Roboto", sans-serif; */
+    font-family: "Delius", cursive;
+    text-transform: uppercase;
+    outline: 0;
+    background: #272728;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: var(--primaryText_2_2);
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+  }
+  .form button:hover,
+  .form button:active,
+  .form button:focus {
+    background: #fd2e1c;
+  }
+}
+/* ===================================================
+                    UBICACION
+     ===================================================== */
+
+#maps {
+  height: 550px;
+  iframe {
+    height: 100%;
+  }
+  .container-full,
+  .row {
+    height: 100%;
+  }
+}
+/* ===================================================
+                    CONTACT
+  ===================================================== */
+
+#contact {
+  text-align: center;
+  padding: 4rem 0rem;
+  .layout-bordered {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    &-item {
+      padding: 1.8rem 0rem;
+      border: 0 solid #d3d5db;
+      border-top-width: 1px;
+      &:first-child {
+        border-top-width: 0px;
+      }
+    }
+  }
+  .inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  a {
+    margin-top: 11px;
+  }
+  i {
+    color: var(--secundary);
+  }
+  li {
+    display: block;
+  }
+}
+/* ===================================================
+                    FOOTER
+  ===================================================== */
+
+footer {
+  /* height: 200px; */
+  padding: 3rem 0 1rem;
+  background-color: var(--primary_2_2);
+  color: var(--primaryText_2_2);
+  a {
+    color: var(--primaryText_2_2);
+    font-weight: lighter;
+  }
+
+  h5 {
+    font-family: "Delius", cursive;
+  }
+  li span {
+    /*  margin-left: 1.5rem; */
+    &:first-child {
+      font-weight: 550;
+    }
+  }
+  .redes {
+  }
+  .politicas {
+    /*   a{
+    float: button;
+  } */
+  }
+  .hr {
+    margin: 1rem 0;
+    display: block;
+    width: 80%;
+    height: 2px;
+  }
+  hr {
+    margin-top: 0;
+    margin-bottom: 0;
+    border-top: 1px solid var(--primary_1_2);
+  }
+}
+
+.row {
+  height: 100%;
+}
+/* ===================================================
+                    OTROS
+            ===================================================== */
+/* ===================================================
+                     MEDIA QUERY
+  ===================================================== */
+
+@media (min-width: 768px) {
+  .header-area {
+    /* 48em = 768px */
+    .main-menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    li {
+      float: left;
+    }
+    li a {
+      /*    padding: 20px 30px; */
+    }
+    .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .menu-icon {
+      display: none;
+    }
+  }
+  /* CONTACT */
+  #contact {
+    & .layout-bordered {
+      flex-direction: row;
+      &-item {
+        padding: 1rem 0rem;
+        flex-basis: 33.333%;
+        border-top-width: 0px;
+        border-right-width: 1px;
+        &:last-child {
+          border-right-width: 0px;
+        }
+      }
+    }
+  }
+}

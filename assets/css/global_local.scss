@@ -1,0 +1,45 @@
+@import url("https://drive.google.com/uc?id=1FFGct-H9pfYLbZMEEliYXfzgfiBOXalc");
+@font-face {
+  font-family: "myfont";
+  src: url("../fonts/CHOWFUN_.TTF");
+}
+
+/* @import url(../../../global.css); */
+:root{
+  --tp:"Delius", cursive;
+}
+body a,
+button,
+.btn {
+  cursor: pointer !important;
+  font-family: var(--font-family-title);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /*     color: var(--heading-color); */
+  /*     letter-spacing: -1px; */
+  font-family: "myfont";
+}
+p,a, span {
+  font-family: "Delius", cursive;
+}
+
+h3.title-big {
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 42px;
+  margin-bottom: 20px;
+}
+
+h6.sub-title {
+  font-size: 16px;
+  color: #999;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
