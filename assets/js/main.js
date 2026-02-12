@@ -6,6 +6,50 @@ $(document).ready(function(){
         threshold: 0
     });
 
+    // Intersection Observer for scroll animations
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    // Observe all fade-in elements
+    document.querySelectorAll('.fade-in-up, .fade-in-scale').forEach(el => {
+        observer.observe(el);
+    });
+
+    // Gallery Filter Functionality
+    $('.filter-btn').on('click', function() {
+        const filter = $(this).data('filter');
+
+        // Update active button
+        $('.filter-btn').removeClass('active');
+        $(this).addClass('active');
+
+        // Filter gallery items
+        $('.gallery-item').each(function() {
+            const category = $(this).data('category');
+
+            if (filter === 'todos' || category === filter) {
+                $(this).removeClass('hidden').addClass('fade-in-scale');
+                // Re-trigger animation
+                setTimeout(() => {
+                    $(this).addClass('visible');
+                }, 50);
+            } else {
+                $(this).removeClass('visible').addClass('hidden');
+            }
+        });
+    });
+
     // Smooth Scrolling Using Navigation Menu
     $('a[href*="#"]').on('click', function(e){
         $('html,body').animate({
@@ -102,4 +146,25 @@ $(document).ready(function(){
             }
         });
     });
+
+    // New Reservation Form Handler
+    $('#reservation-form').on('submit', function(e) {
+        e.preventDefault();
+
+        var button = $(this).find('.reservation-submit');
+        var originalText = button.text();
+
+        // Change button state
+        button.text('✓ ENVIADO').css('background-color', '#28a745');
+
+        // Reset after 3 seconds
+        setTimeout(function() {
+            button.text(originalText).css('background-color', '');
+            $('#reservation-form')[0].reset();
+        }, 3000);
+    });
+
+    // Set current year in footer
+    const currentYear = new Date().getFullYear();
+    $('#current-year').text(currentYear);
 });

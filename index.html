@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- global_local -->
     <link rel="stylesheet" href="assets/css/global_local.css" />
-    <!-- custom css  -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Jonna Framework - Base CSS Framework -->
+    <link rel="stylesheet" href="assets/css/jonna-framework-0.7.css" />
+    <!-- custom css - Estilos específicos del sitio -->
+    <link rel="stylesheet" href="assets/css/style-optimized.css" />
 
     <!-- google maps -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
@@ -32,11 +34,12 @@
         ></label>
 
         <ul class="menu">
-          <li><a href="#menu" class="btn button-wrapper">MENU</a></li>
+          <li><a href="#menu" class="btn button-wrapper">MENÚ</a></li>
+          <li><a href="#galeria" class="btn button-wrapper">GALERÍA</a></li>
           <li>
-            <a href="#reservacion" class="btn button-wrapper">RESERVACION</a>
+            <a href="#reservacion" class="btn button-wrapper">RESERVACIÓN</a>
           </li>
-          <li><a href="#maps" class="btn button-wrapper">UBICACION</a></li>
+          <li><a href="#maps" class="btn button-wrapper">UBICACIÓN</a></li>
         </ul>
       </nav>
     </header>
@@ -62,7 +65,7 @@
             >
               <path
                 d="M0.00,49.98 C149.99,150.00 357.50,162.33 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-                style="stroke: none; fill: #3c3c3d"
+                style="stroke: none; fill: #262626"
               ></path>
             </svg>
           </div>
@@ -74,287 +77,535 @@
      =====================================================-->
 
     <!--===================================================
+                    SOBRE NOSOTROS
+     =====================================================-->
+    <section id="sobre-nosotros" class="py-20 bg-neutral-800">
+      <div class="container">
+        <!-- Header -->
+        <div class="text-center mb-16 fade-in-up">
+          <h2 class="text-red-600 mb-6" style="font-size: 3rem; font-weight: bold;">
+            Sobre Nosotros
+          </h2>
+          <div class="section-divider"></div>
+          <p class="about-intro">
+            Desde hace más de 15 años, TAN WAN ha sido el hogar de la auténtica comida china en la ciudad.
+            Nuestro compromiso es traer los sabores tradicionales de China directamente a tu mesa,
+            combinando técnicas milenarias con la pasión por la excelencia culinaria.
+          </p>
+        </div>
+
+        <!-- Features Grid -->
+        <div class="features-grid">
+          <div class="feature-item fade-in-up">
+            <div class="feature-icon">
+              <i class="fas fa-hat-chef"></i>
+            </div>
+            <h3>Chefs Expertos</h3>
+            <p>Cocineros con más de 20 años de experiencia en auténtica cocina china</p>
+          </div>
+
+          <div class="feature-item fade-in-up">
+            <div class="feature-icon">
+              <i class="fas fa-heart"></i>
+            </div>
+            <h3>Ingredientes Frescos</h3>
+            <p>Seleccionamos los mejores ingredientes diariamente para garantizar calidad</p>
+          </div>
+
+          <div class="feature-item fade-in-up">
+            <div class="feature-icon">
+              <i class="fas fa-award"></i>
+            </div>
+            <h3>Recetas Tradicionales</h3>
+            <p>Preparamos cada platillo siguiendo recetas ancestrales de China</p>
+          </div>
+
+          <div class="feature-item fade-in-up">
+            <div class="feature-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>Ambiente Familiar</h3>
+            <p>Un espacio acogedor perfecto para compartir con tus seres queridos</p>
+          </div>
+        </div>
+
+        <!-- Quote Section -->
+        <div class="quote-section fade-in-up">
+          <div class="quote-container">
+            <div class="quote-mark-left">"</div>
+            <p class="quote-text">La comida es el amor hecho visible</p>
+            <div class="quote-mark-right">"</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--===================================================
                     MENU COMIDA
      =====================================================-->
-    <section id="menu">
+    <section id="menu" class="py-20 bg-neutral-900 pattern">
       <div class="container">
+        <!-- Header -->
+        <div class="text-center mb-16 fade-in-up">
+          <h2 class="text-red-600 mb-4" style="font-size: 3rem; font-weight: bold;">
+            Nuestro Menú
+          </h2>
+          <div class="section-divider"></div>
+        </div>
+
         <div class="row">
-          <h1 class="title">Nuestro Menú</h1>
-          <div class="cards pattern">
+          <div class="cards ">
             <!-- cards-item -->
             <div class="cards-item">
               <div class="card-header">
-                <div class="icon-box">
-                  <div class="icon"></div>
-                </div>
-
+                <div class="price-badge">140 pv</div>
                 <img
                   class="lazy"
-                  data-src="assets/img/menu/menu_01.jpg"
-                  alt="No se encontro el archivo"
+                  data-src="https://images.unsplash.com/photo-1769690507359-98ad7820b1bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaG93JTIwbWVpbiUyMGNoaW5lc2UlMjBub29kbGVzfGVufDF8fHx8MTc3MDc4OTU5OHww&ixlib=rb-4.1.0&q=80&w=1080"
+                  alt="Chow Mein"
                 />
               </div>
               <div class="card-content">
                 <div class="card-title">Chow Mein</div>
-                <div class="card-text">150 lps</div>
+                <div class="card-description">Fideos salteados con vegetales frescos</div>
               </div>
             </div>
             <!-- cards-item -->
             <div class="cards-item">
               <div class="card-header">
-                <div class="icon-box">
-                  <div class="icon"></div>
-                </div>
+                <div class="price-badge">110 pv</div>
                 <img
                   class="lazy"
-                  data-src="assets/img/menu/menu_02.jpg"
-                  alt="No se encontro el archivo"
+                  data-src="https://images.unsplash.com/photo-1694834589398-27b369c6f7a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwZHVtcGxpbmdzJTIwZGltJTIwc3VtfGVufDF8fHx8MTc3MDcwOTA4OHww&ixlib=rb-4.1.0&q=80&w=1080"
+                  alt="Dumplings"
                 />
               </div>
               <div class="card-content">
                 <div class="card-title">Dumplings</div>
-                <div class="card-text">150 lps</div>
+                <div class="card-description">Empanadillas al vapor con relleno especial</div>
               </div>
             </div>
             <!-- cards-item -->
             <div class="cards-item">
               <div class="card-header">
-                <div class="icon-box">
-                  <div class="icon"></div>
-                </div>
+                <div class="price-badge">120 pv</div>
                 <img
                   class="lazy"
-                  data-src="assets/img/menu/menu_03.jpg"
-                  alt="No se encontro el archivo"
+                  data-src="https://images.unsplash.com/photo-1767298113547-11e95951608b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwZGltJTIwc3VtJTIwcGxhdGV8ZW58MXx8fHwxNzcwNzg5NTk5fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                  alt="Dim Sum"
                 />
               </div>
               <div class="card-content">
                 <div class="card-title">Dim Sum</div>
-                <div class="card-text">150 lps</div>
+                <div class="card-description">Selección de bocados cantoneses al vapor</div>
               </div>
             </div>
             <!-- cards-item -->
             <div class="cards-item">
               <div class="card-header">
-                <div class="icon-box">
-                  <div class="icon"></div>
-                </div>
+                <div class="price-badge">100 pv</div>
                 <img
                   class="lazy"
-                  data-src="assets/img/menu/menu_04.jpg"
-                  alt="No se encontro el archivo"
+                  data-src="https://images.unsplash.com/photo-1535923054316-5f75572def8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwd29udG9uJTIwc291cCUyMGluZ3JlZGllbnRzfGVufDF8fHx8MTc3MDc4OTU5OXww&ixlib=rb-4.1.0&q=80&w=1080"
+                  alt="Won Ton Sopa"
                 />
               </div>
               <div class="card-content">
-                <div class="card-title">Won Ton sopa</div>
-                <div class="card-text">150 lps</div>
+                <div class="card-title">Won Ton Sopa</div>
+                <div class="card-description">Sopa tradicional con won tons caseros</div>
               </div>
             </div>
             <!-- cards-item -->
             <div class="cards-item">
               <div class="card-header">
-                <div class="icon-box">
-                  <div class="icon"></div>
-                </div>
+                <div class="price-badge">190 pv</div>
                 <img
                   class="lazy"
-                  data-src="assets/img/menu/menu_05.jpg"
-                  alt="No se encontro el archivo"
+                  data-src="https://images.unsplash.com/photo-1676215702986-ef4c371cddcb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwc2NhbGxvcHMlMjBzZWFmb29kfGVufDF8fHx8MTc3MDc4OTU5OXww&ixlib=rb-4.1.0&q=80&w=1080"
+                  alt="Pato a la pekinesa"
                 />
               </div>
               <div class="card-content">
                 <div class="card-title">Pato a la pekinesa</div>
-                <div class="card-text">150 lps</div>
+                <div class="card-description">Pato laqueado servido con panqueques</div>
               </div>
             </div>
             <!-- cards-item -->
             <div class="cards-item">
               <div class="card-header">
-                <div class="icon-box">
-                  <div class="icon"></div>
-                </div>
+                <div class="price-badge">100 pv</div>
                 <img
                   class="lazy"
-                  data-src="assets/img/menu/menu_06.jpg"
-                  alt="No se encontro el archivo"
+                  data-src="https://images.unsplash.com/photo-1759418661781-2b37f26c4573?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwZnJpZWQlMjByaWNlJTIwY2FudG9uZXNlfGVufDF8fHx8MTc3MDc4OTYwMHww&ixlib=rb-4.1.0&q=80&w=1080"
+                  alt="Sopa de pollo cantonesa"
                 />
               </div>
               <div class="card-content">
                 <div class="card-title">Sopa de pollo cantonesa</div>
-                <div class="card-text">150 lps</div>
+                <div class="card-description">Arroz frito con huevo y vegetales</div>
               </div>
             </div>
             <!-- cards-item -->
             <div class="cards-item">
               <div class="card-header">
-                <div class="icon-box">
-                  <div class="icon"></div>
-                </div>
+                <div class="price-badge">130 pv</div>
                 <img
                   class="lazy"
-                  data-src="assets/img/menu/menu_07.jpg"
-                  alt="No se encontro el archivo"
+                  data-src="https://images.unsplash.com/photo-1762418967889-10abec43c325?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwc3RlYW1lZCUyMGR1bXBsaW5ncyUyMGJhbWJvb3xlbnwxfHx8fDE3NzA3ODk2MDR8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                  alt="Agridulce chino"
                 />
               </div>
               <div class="card-content">
-                <div class="card-title">agridulce chino</div>
-                <div class="card-text">150 lps</div>
+                <div class="card-title">Agridulce chino</div>
+                <div class="card-description">Dumplings al vapor en cestas de bambú</div>
               </div>
             </div>
             <!-- cards-item -->
             <div class="cards-item">
               <div class="card-header">
-                <div class="icon-box">
-                  <div class="icon"></div>
-                </div>
+                <div class="price-badge">190 pv</div>
                 <img
                   class="lazy"
-                  data-src="assets/img/menu/menu_08.jpg"
-                  alt="No se encontro el archivo"
+                  data-src="https://images.unsplash.com/photo-1625883981857-423063df7b2a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwa3VuZyUyMHBhbyUyMGNoaWNrZW58ZW58MXx8fHwxNzcwNzg5NjA1fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                  alt="Kung Pao Chicken"
                 />
               </div>
               <div class="card-content">
-                <div class="card-title">Pato a la pekinesa</div>
-                <div class="card-text">150 lps</div>
+                <div class="card-title">Kung Pao Chicken</div>
+                <div class="card-description">Pollo salteado con cacahuates y chile</div>
               </div>
             </div>
             <!-- cards-item -->
             <div class="cards-item">
               <div class="card-header">
-                <div class="icon-box">
-                  <div class="icon"></div>
-                </div>
+                <div class="price-badge">130 pv</div>
                 <img
                   class="lazy"
-                  data-src="assets/img/menu/menu_09.jpg"
-                  alt="No se encontro el archivo"
+                  data-src="https://images.unsplash.com/photo-1703945530505-2f06e3e1cf97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwaG90JTIwc3BpY3klMjBmb29kfGVufDF8fHx8MTc3MDc4OTYwMXww&ixlib=rb-4.1.0&q=80&w=1080"
+                  alt="Tofu picante"
                 />
               </div>
               <div class="card-content">
-                <div class="card-title">tofu picante</div>
-                <div class="card-text">150 lps</div>
+                <div class="card-title">Tofu picante</div>
+                <div class="card-description">Tofu en salsa picante de Sichuan</div>
               </div>
             </div>
-            <!-- cards-item -->
-            <div class="cards-item">
-              <div class="card-header">
-                <div class="icon-box">
-                  <div class="icon"></div>
-                </div>
-                <img
-                  class="lazy"
-                  data-src="assets/img/menu/menu_10.jpg"
-                  alt="No se encontro el archivo"
-                />
-              </div>
-              <div class="card-content">
-                <div class="card-title">Arroz con huevo</div>
-                <div class="card-text">150 lps</div>
-              </div>
+          </div>
+
+          <!-- CTA Button -->
+          <div class="menu-cta">
+            <a href="#reservacion" class="btn-reservacion">HACER RESERVACIÓN</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--===================================================
+                    GALERÍA
+     =====================================================-->
+    <section id="galeria" class="py-20 bg-neutral-900">
+      <div class="container">
+        <!-- Header -->
+        <div class="text-center mb-12 fade-in-up">
+          <h2 class="text-red-600 mb-4" style="font-size: 3rem; font-weight: bold;">
+            Galería
+          </h2>
+          <div class="section-divider"></div>
+          <p class="gallery-intro">
+            Explora nuestro ambiente y deliciosos platillos
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="gallery-filters fade-in-up">
+          <button class="filter-btn active" data-filter="todos">Todos</button>
+          <button class="filter-btn" data-filter="comida">Comida</button>
+          <button class="filter-btn" data-filter="ambiente">Ambiente</button>
+          <button class="filter-btn" data-filter="chef">Chef</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid">
+          <div class="gallery-item fade-in-scale" data-category="ambiente">
+            <img class="lazy" data-src="https://images.unsplash.com/photo-1759893497863-c90a6dfa7a86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwcmVzdGF1cmFudCUyMGludGVyaW9yJTIwZGluaW5nfGVufDF8fHx8MTc3MDc5MTAyM3ww&ixlib=rb-4.1.0&q=80&w=1080" alt="Interior del Restaurante" />
+            <div class="gallery-overlay">
+              <h3>Interior del Restaurante</h3>
             </div>
-            <!-- cards-item -->
-            <div class="cards-item">
-              <div class="card-header">
-                <div class="icon-box">
-                  <div class="icon"></div>
-                </div>
-                <img
-                  class="lazy"
-                  data-src="assets/img/menu/menu_11.jpg"
-                  alt="No se encontro el archivo"
-                />
-              </div>
-              <div class="card-content">
-                <div class="card-title">Rollitos de primavera</div>
-                <div class="card-text">150 lps</div>
-              </div>
+          </div>
+
+          <div class="gallery-item fade-in-scale" data-category="comida">
+            <img class="lazy" data-src="https://images.unsplash.com/photo-1769495521619-65bcc46a1b88?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwZm9vZCUyMHRhYmxlJTIwc3ByZWFkfGVufDF8fHx8MTc3MDc5MTAyM3ww&ixlib=rb-4.1.0&q=80&w=1080" alt="Banquete Completo" />
+            <div class="gallery-overlay">
+              <h3>Banquete Completo</h3>
             </div>
-            <!-- cards-item -->
-            <div class="cards-item">
-              <div class="card-header">
-                <div class="icon-box">
-                  <div class="icon"></div>
-                </div>
-                <img
-                  class="lazy"
-                  data-src="assets/img/menu/menu_12.jpg"
-                  alt="No se encontro el archivo"
-                />
-              </div>
-              <div class="card-content">
-                <div class="card-title">Hot pot</div>
-                <div class="card-text">150 lps</div>
-              </div>
+          </div>
+
+          <div class="gallery-item fade-in-scale" data-category="chef">
+            <img class="lazy" data-src="https://images.unsplash.com/photo-1665116582773-51394e546f07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwY2hlZiUyMGNvb2tpbmclMjB3b2t8ZW58MXx8fHwxNzcwNzQ5MTI5fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Nuestros Chefs" />
+            <div class="gallery-overlay">
+              <h3>Nuestros Chefs</h3>
             </div>
-            <!-- cards-item -->
-            <div class="cards-item">
-              <div class="card-header">
-                <div class="icon-box">
-                  <div class="icon"></div>
-                </div>
-                <img
-                  class="lazy"
-                  data-src="assets/img/menu/menu_13.jpg"
-                  alt="No se encontro el archivo"
-                />
-              </div>
-              <div class="card-content">
-                <div class="card-title">tofu picante</div>
-                <div class="card-text">150 lps</div>
-              </div>
+          </div>
+
+          <div class="gallery-item fade-in-scale" data-category="comida">
+            <img class="lazy" data-src="https://images.unsplash.com/photo-1557665223-671ea12d4d5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwZGltJTIwc3VtJTIwYmFtYm9vJTIwc3RlYW1lcnxlbnwxfHx8fDE3NzA3OTEwMjR8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Dim Sum Tradicional" />
+            <div class="gallery-overlay">
+              <h3>Dim Sum Tradicional</h3>
             </div>
-            <!-- cards-item -->
-            <div class="cards-item">
-              <div class="card-header">
-                <div class="icon-box">
-                  <div class="icon"></div>
-                </div>
-                <img
-                  class="lazy"
-                  data-src="assets/img/menu/menu_14.jpg"
-                  alt="No se encontro el archivo"
-                />
-              </div>
-              <div class="card-content">
-                <div class="card-title">Dim Sum</div>
-                <div class="card-text">150 lps</div>
-              </div>
+          </div>
+
+          <div class="gallery-item fade-in-scale" data-category="comida">
+            <img class="lazy" data-src="https://images.unsplash.com/photo-1645123986577-dfc9359e982b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwbm9vZGxlcyUyMHNvdXAlMjBib3dsfGVufDF8fHx8MTc3MDc5MTAyNHww&ixlib=rb-4.1.0&q=80&w=1080" alt="Sopa de Fideos" />
+            <div class="gallery-overlay">
+              <h3>Sopa de Fideos</h3>
+            </div>
+          </div>
+
+          <div class="gallery-item fade-in-scale" data-category="ambiente">
+            <img class="lazy" data-src="https://images.unsplash.com/photo-1768530219331-eb703b855e4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwcmVzdGF1cmFudCUyMGF0bW9zcGhlcmUlMjByZWQlMjBsYW50ZXJuc3xlbnwxfHx8fDE3NzA3OTEwMjV8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Ambiente Acogedor" />
+            <div class="gallery-overlay">
+              <h3>Ambiente Acogedor</h3>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!--     <div class="section ubicacion">
-      <div class="container"></div>
-    </div> -->
+    <!--===================================================
+                    TESTIMONIOS
+     =====================================================-->
+    <section id="testimonios" class="py-20 bg-neutral-800">
+      <div class="container">
+        <!-- Header -->
+        <div class="text-center mb-16 fade-in-up">
+          <h2 class="text-red-600 mb-4" style="font-size: 3rem; font-weight: bold;">
+            Testimonios
+          </h2>
+          <div class="section-divider"></div>
+          <p class="testimonial-intro">
+            Lo que dicen nuestros clientes sobre nosotros
+          </p>
+        </div>
+
+        <!-- Testimonials Grid -->
+        <div class="testimonials-grid">
+          <div class="testimonial-card fade-in-up">
+            <div class="quote-icon">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-comment">
+              "El mejor restaurante chino de la ciudad. Los dumplings son increíbles y el servicio es excepcional. ¡Totalmente recomendado!"
+            </p>
+            <div class="testimonial-author">
+              <h4>María González</h4>
+              <p>Hace 1 semana</p>
+            </div>
+          </div>
+
+          <div class="testimonial-card fade-in-up">
+            <div class="quote-icon">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-comment">
+              "Auténtica comida china con un sabor espectacular. El ambiente es muy acogedor y los precios son justos. Volveremos sin duda."
+            </p>
+            <div class="testimonial-author">
+              <h4>Carlos Ramírez</h4>
+              <p>Hace 2 semanas</p>
+            </div>
+          </div>
+
+          <div class="testimonial-card fade-in-up">
+            <div class="quote-icon">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-comment">
+              "La mejor experiencia culinaria que he tenido. El pato a la pekinesa es exquisito y el personal es muy atento. ¡5 estrellas!"
+            </p>
+            <div class="testimonial-author">
+              <h4>Ana Martínez</h4>
+              <p>Hace 3 semanas</p>
+            </div>
+          </div>
+
+          <div class="testimonial-card fade-in-up">
+            <div class="quote-icon">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-comment">
+              "He probado muchos restaurantes chinos, pero TAN WAN es simplemente el mejor. Los sabores son auténticos y la calidad insuperable."
+            </p>
+            <div class="testimonial-author">
+              <h4>Jorge López</h4>
+              <p>Hace 1 mes</p>
+            </div>
+          </div>
+
+          <div class="testimonial-card fade-in-up">
+            <div class="quote-icon">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-comment">
+              "Un lugar maravilloso para celebrar ocasiones especiales. La comida es deliciosa y el ambiente es perfecto para familias."
+            </p>
+            <div class="testimonial-author">
+              <h4>Laura Fernández</h4>
+              <p>Hace 1 mes</p>
+            </div>
+          </div>
+
+          <div class="testimonial-card fade-in-up">
+            <div class="quote-icon">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            <div class="testimonial-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-comment">
+              "Los fideos chow mein son los mejores que he probado. El chef realmente sabe lo que hace. Muy recomendado para los amantes de la comida asiática."
+            </p>
+            <div class="testimonial-author">
+              <h4>Roberto Silva</h4>
+              <p>Hace 2 meses</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Average Rating -->
+        <div class="average-rating fade-in-up">
+          <div class="rating-box">
+            <div class="rating-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p class="rating-number">5.0</p>
+            <p class="rating-text">Basado en 250+ reseñas</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!--===================================================
                     RESERVACION
      =====================================================-->
-    <section id="reservacion">
-      <div class="container">
-        <div class="row text">
-          <h1 class="title">Reservación</h1>
-          <p>ingresa los datos y obten una reservacin desde tu casa</p>
+    <section id="reservacion" class="reservation-section">
+      <!-- Background Image -->
+      <div class="reservation-bg"></div>
+
+      <div class="container reservation-container">
+        <!-- Header -->
+        <div class="text-center mb-12 fade-in-up">
+          <h2 class="text-red-600 mb-4" style="font-size: 3rem; font-weight: bold;">
+            Reservación
+          </h2>
+          <p class="reservation-subtitle">
+            Ingresa los datos y obtén una reservación desde tu casa
+          </p>
         </div>
 
-        <div class="row">
-          <div class="col">
-            <div class="datos">
-              <div class="form">
-                <form class="register-form">
-                  <input type="text" placeholder="nombre" />
-                  <input type="datetime" placeholder="hora" />
-                  <input type="date" placeholder="dia" />
-                  <input type="text" placeholder="email" />
-                  <input type="text" placeholder="cantidad de personas" />
-
-                  <button>ENVIAR</button>
-                </form>
+        <!-- Form Container -->
+        <div class="reservation-form-wrapper fade-in-up">
+          <div class="reservation-form-box">
+            <form class="reservation-form" id="reservation-form">
+              <!-- Nombre -->
+              <div class="form-group fade-in-up">
+                <label for="nombre">Nombre</label>
+                <div class="input-wrapper">
+                  <i class="fas fa-user input-icon"></i>
+                  <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required />
+                </div>
               </div>
-            </div>
+
+              <!-- Hora -->
+              <div class="form-group fade-in-up">
+                <label for="hora">Hora</label>
+                <div class="input-wrapper">
+                  <i class="fas fa-clock input-icon"></i>
+                  <input type="time" id="hora" name="hora" required />
+                </div>
+              </div>
+
+              <!-- Fecha -->
+              <div class="form-group fade-in-up">
+                <label for="fecha">Fecha</label>
+                <div class="input-wrapper">
+                  <i class="fas fa-calendar input-icon"></i>
+                  <input type="date" id="fecha" name="fecha" required />
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="form-group fade-in-up">
+                <label for="email">Email</label>
+                <div class="input-wrapper">
+                  <i class="fas fa-envelope input-icon"></i>
+                  <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+                </div>
+              </div>
+
+              <!-- Personas -->
+              <div class="form-group fade-in-up">
+                <label for="personas">Cantidad de Personas</label>
+                <div class="input-wrapper">
+                  <i class="fas fa-users input-icon"></i>
+                  <input type="number" id="personas" name="personas" min="1" max="20" placeholder="Número de personas" required />
+                </div>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="reservation-submit fade-in-up">
+                ENVIAR
+              </button>
+            </form>
           </div>
+        </div>
+
+        <!-- Additional Info -->
+        <div class="reservation-info fade-in-up">
+          <p>Horario de atención: Lunes a Domingo 11:00 AM - 10:00 PM</p>
+          <p>Para grupos mayores a 10 personas, por favor llámanos al <span class="highlight-phone">504-0824-8972</span></p>
         </div>
       </div>
     </section>
@@ -362,97 +613,154 @@
     <!--===================================================
                     UBICACION
      =====================================================-->
-    <div id="maps">
-      <div class="container-full">
-        <div class="row">
-          <div class="col">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56593509.363964364!2d67.4692816011634!3d30.03130070479193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f66430b113d5af1%3A0x323ecf76c17e8f6b!2sSan%20Pedro%20Sula!5e0!3m2!1ses-419!2shn!4v1601879244174!5m2!1ses-419!2shn"
-              width="100%"
-              height="100%"
-            ></iframe>
-          </div>
+    <section id="maps" class="location-section py-20 bg-neutral-900">
+      <div class="container">
+        <!-- Header -->
+        <div class="text-center mb-16 fade-in-up">
+          <h2 class="text-red-600 mb-4" style="font-size: 3rem; font-weight: bold;">
+            Ubicación
+          </h2>
+          <div class="section-divider"></div>
+          <p class="location-intro">
+            Visítanos y disfruta de una experiencia culinaria única
+          </p>
         </div>
-      </div>
-    </div>
 
-    <!--===================================================
-                           CONTACT
-     =====================================================-->
-    <div class="section" id="contact">
-      <div class="container-full">
-        <div class="row">
-          <div class="layout-bordered">
-            <div class="layout-bordered-item">
-              <div class="inner">
-                <i class="fas fa-phone"></i>
-                <a href="">504-9824-8935</a>
-              </div>
+        <!-- Map -->
+        <div class="location-map fade-in-up">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56593509.363964364!2d67.4692816011634!3d30.03130070479193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f66430b113d5af1%3A0x323ecf76c17e8f6b!2sSan%20Pedro%20Sula!5e0!3m2!1ses-419!2shn!4v1601879244174!5m2!1ses-419!2shn"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+
+        <!-- Contact Info Cards -->
+        <div class="contact-cards fade-in-up">
+          <a href="tel:+50408248972" class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
             </div>
-            <div class="layout-bordered-item">
-              <div class="inner">
-                <i class="fas fa-map-marker-alt"></i>
-                <a href="mailtro:tanwan.@gmail.com">tanwan.@gmail.com</a>
-              </div>
+            <h3>Teléfono</h3>
+            <p>504-0824-8972</p>
+          </a>
+
+          <a href="mailto:tanwan@gmail.com" class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
             </div>
-            <div class="layout-bordered-item">
-              <div class="inner">
-                <i class="fas fa-envelope"></i>
-                <a href="">San Pedro Sula, Honduras</a>
-              </div>
+            <h3>Email</h3>
+            <p>tanwan@gmail.com</p>
+          </a>
+
+          <a href="#" class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h3>Dirección</h3>
+            <p>San Pedro Sula, Honduras</p>
+          </a>
+        </div>
+
+        <!-- Hours -->
+        <div class="location-hours fade-in-up">
+          <h3>Horario de Atención</h3>
+          <div class="hours-list">
+            <div class="hours-item">
+              <span>Lunes - Viernes:</span>
+              <span>11:00 AM - 10:00 PM</span>
+            </div>
+            <div class="hours-item">
+              <span>Sábado:</span>
+              <span>12:00 PM - 11:00 PM</span>
+            </div>
+            <div class="hours-item">
+              <span>Domingo:</span>
+              <span>12:00 PM - 9:00 PM</span>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!--===================================================
                              FOOTER
      =====================================================-->
-    <footer>
+    <footer class="footer-modern">
       <div class="container">
-        <div class="row">
-          <div class="col-6">
-            <h1>TAN WAN</h1>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel,
-              incidunt officia libero accusamus eos voluptates modi? Laborum, ex
-              vitae
+        <div class="footer-grid">
+          <!-- Brand Section -->
+          <div class="footer-section fade-in-up">
+            <h3 class="footer-brand">TAN WAN</h3>
+            <p class="footer-description">
+              Auténtica comida china en el corazón de San Pedro Sula.
+              Sabores tradicionales que te transportarán a China.
             </p>
-          </div>
-          <div class="col-6">
-            <h3>Laboramos</h3>
-            <span>Dias Laborales:</span>
-            <span>Lunes a Sabado</span>
-            <ul>
-              <li>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <span>Horas Laborales:</span>
-                <span>07:00am - 05:00pm</span>
-              </li>
-            </ul>
-
-            <!--  <h3>Llamanos</h3>
-                    <h5><span></span>Atención al cliente</h5>
-                    <h3>Redes sociales</h3> -->
-            <div class="redes">
-              <span></span>
-              <a href="#"><i class="fas fa-phone-alt"></i></a>
-              <a href="#"><i class="fab fa-pinterest"></i></a>
-              <a href="#"><i class="fab fa-facebook"></i></a>
+            <!-- Social Links -->
+            <div class="footer-social">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
             </div>
           </div>
-        </div>
-        <div class="row politicas">
-          <div class="hr">
-            <hr />
+
+          <!-- Quick Links -->
+          <div class="footer-section fade-in-up">
+            <h4 class="footer-title">Enlaces Rápidos</h4>
+            <ul class="footer-links">
+              <li><a href="#menu">Menú</a></li>
+              <li><a href="#galeria">Galería</a></li>
+              <li><a href="#reservacion">Reservación</a></li>
+              <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+            </ul>
           </div>
-          <a href="privacy.html"
-            >© 2020 All Rights Reserved Terms of Use and Privacy Policy</a
-          >
+
+          <!-- Contact Info -->
+          <div class="footer-section fade-in-up">
+            <h4 class="footer-title">Contacto</h4>
+            <ul class="footer-contact">
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <span>San Pedro Sula, Honduras</span>
+              </li>
+              <li>
+                <i class="fas fa-phone"></i>
+                <a href="tel:+50408248972">504-0824-8972</a>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:tanwan@gmail.com">tanwan@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Hours -->
+          <div class="footer-section fade-in-up">
+            <h4 class="footer-title">Horario</h4>
+            <ul class="footer-hours">
+              <li>
+                <span>Lun - Vie:</span>
+                <span>11:00 AM - 10:00 PM</span>
+              </li>
+              <li>
+                <span>Sábado:</span>
+                <span>12:00 PM - 11:00 PM</span>
+              </li>
+              <li>
+                <span>Domingo:</span>
+                <span>12:00 PM - 9:00 PM</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom fade-in-up">
+          <p>© <span id="current-year"></span> TAN WAN. Todos los derechos reservados.</p>
+          <p class="footer-love">Hecho con <i class="fas fa-heart"></i> para los amantes de la comida china</p>
         </div>
       </div>
     </footer>
