@@ -147,154 +147,314 @@
       <div class="container">
         <!-- Header -->
         <div class="text-center mb-16 fade-in-up">
+          <div class="chef-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 0A5.11 5.11 0 0 1 16.59 6 4 4 0 0 1 18 13.87V21H6Z"></path>
+              <line x1="6" x2="18" y1="17" y2="17"></line>
+            </svg>
+            <span>Auténtica Cocina China</span>
+          </div>
           <h2 class="text-red-600 mb-4" style="font-size: 3rem; font-weight: bold;">
             Nuestro Menú
           </h2>
           <div class="section-divider"></div>
+          <p class="menu-subtitle">
+            Platillos artesanales elaborados con ingredientes frescos y recetas tradicionales
+          </p>
         </div>
 
-        <div class="row">
-          <div class="cards ">
-            <!-- cards-item -->
-            <div class="cards-item">
-              <div class="card-header">
-                <div class="price-badge">140 pv</div>
-                <img
-                  class="lazy"
-                  data-src="https://images.unsplash.com/photo-1769690507359-98ad7820b1bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaG93JTIwbWVpbiUyMGNoaW5lc2UlMjBub29kbGVzfGVufDF8fHx8MTc3MDc4OTU5OHww&ixlib=rb-4.1.0&q=80&w=1080"
-                  alt="Chow Mein"
-                />
-              </div>
-              <div class="card-content">
-                <div class="card-title">Chow Mein</div>
-                <div class="card-description">Fideos salteados con vegetales frescos</div>
+        <!-- Menu Grid -->
+        <div class="menu-grid" id="menuGrid">
+          <!-- Menu Card 1 -->
+          <div class="menu-card fade-in-scale">
+            <div class="badges">
+              <span class="badge badge-popular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+                Popular
+              </span>
+            </div>
+
+            <div class="image-container">
+              <img class="lazy menu-card-image" data-src="https://images.unsplash.com/photo-1769690507359-98ad7820b1bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaG93JTIwbWVpbiUyMGNoaW5lc2UlMjBub29kbGVzfGVufDF8fHx8MTc3MDc4OTU5OHww&ixlib=rb-4.1.0&q=80&w=1080" alt="Chow Mein" loading="lazy">
+              <div class="image-overlay"></div>
+              <div class="rating">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+                <span class="rating-value">4.8</span>
               </div>
             </div>
-            <!-- cards-item -->
-            <div class="cards-item">
-              <div class="card-header">
-                <div class="price-badge">110 pv</div>
-                <img
-                  class="lazy"
-                  data-src="https://images.unsplash.com/photo-1694834589398-27b369c6f7a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwZHVtcGxpbmdzJTIwZGltJTIwc3VtfGVufDF8fHx8MTc3MDcwOTA4OHww&ixlib=rb-4.1.0&q=80&w=1080"
-                  alt="Dumplings"
-                />
-              </div>
-              <div class="card-content">
-                <div class="card-title">Dumplings</div>
-                <div class="card-description">Empanadillas al vapor con relleno especial</div>
-              </div>
-            </div>
-            <!-- cards-item -->
-            <div class="cards-item">
-              <div class="card-header">
-                <div class="price-badge">120 pv</div>
-                <img
-                  class="lazy"
-                  data-src="https://images.unsplash.com/photo-1767298113547-11e95951608b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwZGltJTIwc3VtJTIwcGxhdGV8ZW58MXx8fHwxNzcwNzg5NTk5fDA&ixlib=rb-4.1.0&q=80&w=1080"
-                  alt="Dim Sum"
-                />
-              </div>
-              <div class="card-content">
-                <div class="card-title">Dim Sum</div>
-                <div class="card-description">Selección de bocados cantoneses al vapor</div>
+
+            <div class="card-content">
+              <h3 class="card-title">Chow Mein</h3>
+              <p class="card-description">Fideos salteados con vegetales frescos, carne de res y salsa de soya</p>
+
+              <div class="card-footer">
+                <div class="price-section">
+                  <div class="price-container">
+                    <span class="price-label">Desde</span>
+                    <span class="price">140</span>
+                    <span class="price-currency">ps</span>
+                  </div>
+                </div>
+
+                <button class="add-button" onclick="window.location.href='#reservacion'">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="8" cy="21" r="1"></circle>
+                    <circle cx="19" cy="21" r="1"></circle>
+                    <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+                  </svg>
+                  Ordenar
+                </button>
               </div>
             </div>
-            <!-- cards-item -->
-            <div class="cards-item">
-              <div class="card-header">
-                <div class="price-badge">100 pv</div>
-                <img
-                  class="lazy"
-                  data-src="https://images.unsplash.com/photo-1535923054316-5f75572def8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwd29udG9uJTIwc291cCUyMGluZ3JlZGllbnRzfGVufDF8fHx8MTc3MDc4OTU5OXww&ixlib=rb-4.1.0&q=80&w=1080"
-                  alt="Won Ton Sopa"
-                />
-              </div>
-              <div class="card-content">
-                <div class="card-title">Won Ton Sopa</div>
-                <div class="card-description">Sopa tradicional con won tons caseros</div>
-              </div>
-            </div>
-            <!-- cards-item -->
-            <div class="cards-item">
-              <div class="card-header">
-                <div class="price-badge">190 pv</div>
-                <img
-                  class="lazy"
-                  data-src="https://images.unsplash.com/photo-1676215702986-ef4c371cddcb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwc2NhbGxvcHMlMjBzZWFmb29kfGVufDF8fHx8MTc3MDc4OTU5OXww&ixlib=rb-4.1.0&q=80&w=1080"
-                  alt="Pato a la pekinesa"
-                />
-              </div>
-              <div class="card-content">
-                <div class="card-title">Pato a la pekinesa</div>
-                <div class="card-description">Pato laqueado servido con panqueques</div>
-              </div>
-            </div>
-            <!-- cards-item -->
-            <div class="cards-item">
-              <div class="card-header">
-                <div class="price-badge">100 pv</div>
-                <img
-                  class="lazy"
-                  data-src="https://images.unsplash.com/photo-1759418661781-2b37f26c4573?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwZnJpZWQlMjByaWNlJTIwY2FudG9uZXNlfGVufDF8fHx8MTc3MDc4OTYwMHww&ixlib=rb-4.1.0&q=80&w=1080"
-                  alt="Sopa de pollo cantonesa"
-                />
-              </div>
-              <div class="card-content">
-                <div class="card-title">Sopa de pollo cantonesa</div>
-                <div class="card-description">Arroz frito con huevo y vegetales</div>
-              </div>
-            </div>
-            <!-- cards-item -->
-            <div class="cards-item">
-              <div class="card-header">
-                <div class="price-badge">130 pv</div>
-                <img
-                  class="lazy"
-                  data-src="https://images.unsplash.com/photo-1762418967889-10abec43c325?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwc3RlYW1lZCUyMGR1bXBsaW5ncyUyMGJhbWJvb3xlbnwxfHx8fDE3NzA3ODk2MDR8MA&ixlib=rb-4.1.0&q=80&w=1080"
-                  alt="Agridulce chino"
-                />
-              </div>
-              <div class="card-content">
-                <div class="card-title">Agridulce chino</div>
-                <div class="card-description">Dumplings al vapor en cestas de bambú</div>
-              </div>
-            </div>
-            <!-- cards-item -->
-            <div class="cards-item">
-              <div class="card-header">
-                <div class="price-badge">190 pv</div>
-                <img
-                  class="lazy"
-                  data-src="https://images.unsplash.com/photo-1625883981857-423063df7b2a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwa3VuZyUyMHBhbyUyMGNoaWNrZW58ZW58MXx8fHwxNzcwNzg5NjA1fDA&ixlib=rb-4.1.0&q=80&w=1080"
-                  alt="Kung Pao Chicken"
-                />
-              </div>
-              <div class="card-content">
-                <div class="card-title">Kung Pao Chicken</div>
-                <div class="card-description">Pollo salteado con cacahuates y chile</div>
-              </div>
-            </div>
-            <!-- cards-item -->
-            <div class="cards-item">
-              <div class="card-header">
-                <div class="price-badge">130 pv</div>
-                <img
-                  class="lazy"
-                  data-src="https://images.unsplash.com/photo-1703945530505-2f06e3e1cf97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwaG90JTIwc3BpY3klMjBmb29kfGVufDF8fHx8MTc3MDc4OTYwMXww&ixlib=rb-4.1.0&q=80&w=1080"
-                  alt="Tofu picante"
-                />
-              </div>
-              <div class="card-content">
-                <div class="card-title">Tofu picante</div>
-                <div class="card-description">Tofu en salsa picante de Sichuan</div>
-              </div>
-            </div>
+
+            <div class="decorative-blob"></div>
           </div>
 
-          <!-- CTA Button -->
-          <div class="menu-cta">
-            <a href="#reservacion" class="btn-reservacion">HACER RESERVACIÓN</a>
+          <!-- Menu Card 2 -->
+          <div class="menu-card fade-in-scale">
+            <div class="badges">
+              <span class="badge badge-vegetarian">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+                  <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+                </svg>
+                Vegetariano
+              </span>
+            </div>
+
+            <div class="image-container">
+              <img class="lazy menu-card-image" data-src="https://images.unsplash.com/photo-1694834589398-27b369c6f7a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwZHVtcGxpbmdzJTIwZGltJTIwc3VtfGVufDF8fHx8MTc3MDcwOTA4OHww&ixlib=rb-4.1.0&q=80&w=1080" alt="Dumplings" loading="lazy">
+              <div class="image-overlay"></div>
+              <div class="rating">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+                <span class="rating-value">4.9</span>
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h3 class="card-title">Dumplings</h3>
+              <p class="card-description">Empanadillas al vapor con relleno especial de vegetales y especias</p>
+
+              <div class="card-footer">
+                <div class="price-section">
+                  <div class="price-container">
+                    <span class="price-label">Desde</span>
+                    <span class="price">110</span>
+                    <span class="price-currency">ps</span>
+                  </div>
+                </div>
+
+                <button class="add-button" onclick="window.location.href='#reservacion'">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="8" cy="21" r="1"></circle>
+                    <circle cx="19" cy="21" r="1"></circle>
+                    <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+                  </svg>
+                  Ordenar
+                </button>
+              </div>
+            </div>
+
+            <div class="decorative-blob"></div>
+          </div>
+
+          <!-- Menu Card 3 -->
+          <div class="menu-card fade-in-scale">
+            <div class="badges">
+              <span class="badge badge-popular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+                Popular
+              </span>
+            </div>
+
+            <div class="image-container">
+              <img class="lazy menu-card-image" data-src="https://images.unsplash.com/photo-1767298113547-11e95951608b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwZGltJTIwc3VtJTIwcGxhdGV8ZW58MXx8fHwxNzcwNzg5NTk5fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Dim Sum" loading="lazy">
+              <div class="image-overlay"></div>
+              <div class="rating">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+                <span class="rating-value">4.7</span>
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h3 class="card-title">Dim Sum</h3>
+              <p class="card-description">Selección de bocados cantoneses al vapor con salsa de soya</p>
+
+              <div class="card-footer">
+                <div class="price-section">
+                  <span class="original-price">140<span style="font-size: 0.65rem;">ps</span></span>
+                  <div class="price-container">
+                    <span class="price-label">Desde</span>
+                    <span class="price">120</span>
+                    <span class="price-currency">ps</span>
+                  </div>
+                </div>
+
+                <button class="add-button" onclick="window.location.href='#reservacion'">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="8" cy="21" r="1"></circle>
+                    <circle cx="19" cy="21" r="1"></circle>
+                    <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+                  </svg>
+                  Ordenar
+                </button>
+              </div>
+            </div>
+
+            <div class="decorative-blob"></div>
+          </div>
+
+          <!-- Menu Card 4 -->
+          <div class="menu-card fade-in-scale">
+            <div class="image-container">
+              <img class="lazy menu-card-image" data-src="https://images.unsplash.com/photo-1535923054316-5f75572def8c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwd29udG9uJTIwc291cCUyMGluZ3JlZGllbnRzfGVufDF8fHx8MTc3MDc4OTU5OXww&ixlib=rb-4.1.0&q=80&w=1080" alt="Won Ton Sopa" loading="lazy">
+              <div class="image-overlay"></div>
+              <div class="rating">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+                <span class="rating-value">4.6</span>
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h3 class="card-title">Won Ton Sopa</h3>
+              <p class="card-description">Sopa tradicional con won tons caseros y caldo de pollo</p>
+
+              <div class="card-footer">
+                <div class="price-section">
+                  <div class="price-container">
+                    <span class="price-label">Desde</span>
+                    <span class="price">100</span>
+                    <span class="price-currency">ps</span>
+                  </div>
+                </div>
+
+                <button class="add-button" onclick="window.location.href='#reservacion'">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="8" cy="21" r="1"></circle>
+                    <circle cx="19" cy="21" r="1"></circle>
+                    <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+                  </svg>
+                  Ordenar
+                </button>
+              </div>
+            </div>
+
+            <div class="decorative-blob"></div>
+          </div>
+
+          <!-- Menu Card 5 -->
+          <div class="menu-card fade-in-scale">
+            <div class="badges">
+              <span class="badge badge-popular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+                Popular
+              </span>
+            </div>
+
+            <div class="image-container">
+              <img class="lazy menu-card-image" data-src="https://images.unsplash.com/photo-1676215702986-ef4c371cddcb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwc2NhbGxvcHMlMjBzZWFmb29kfGVufDF8fHx8MTc3MDc4OTU5OXww&ixlib=rb-4.1.0&q=80&w=1080" alt="Pato a la pekinesa" loading="lazy">
+              <div class="image-overlay"></div>
+              <div class="rating">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+                <span class="rating-value">4.9</span>
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h3 class="card-title">Pato a la Pekinesa</h3>
+              <p class="card-description">Pato laqueado servido con panqueques, pepino y salsa hoisin</p>
+
+              <div class="card-footer">
+                <div class="price-section">
+                  <div class="price-container">
+                    <span class="price-label">Desde</span>
+                    <span class="price">190</span>
+                    <span class="price-currency">ps</span>
+                  </div>
+                </div>
+
+                <button class="add-button" onclick="window.location.href='#reservacion'">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="8" cy="21" r="1"></circle>
+                    <circle cx="19" cy="21" r="1"></circle>
+                    <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+                  </svg>
+                  Ordenar
+                </button>
+              </div>
+            </div>
+
+            <div class="decorative-blob"></div>
+          </div>
+
+          <!-- Menu Card 6 -->
+          <div class="menu-card fade-in-scale">
+            <div class="image-container">
+              <img class="lazy menu-card-image" data-src="https://images.unsplash.com/photo-1625883981857-423063df7b2a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwa3VuZyUyMHBhbyUyMGNoaWNrZW58ZW58MXx8fHwxNzcwNzg5NjA1fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Kung Pao Chicken" loading="lazy">
+              <div class="image-overlay"></div>
+              <div class="rating">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+                <span class="rating-value">4.8</span>
+              </div>
+            </div>
+
+            <div class="card-content">
+              <h3 class="card-title">Kung Pao Chicken</h3>
+              <p class="card-description">Pollo salteado con cacahuates, chile y vegetales crujientes</p>
+
+              <div class="card-footer">
+                <div class="price-section">
+                  <div class="price-container">
+                    <span class="price-label">Desde</span>
+                    <span class="price">150</span>
+                    <span class="price-currency">ps</span>
+                  </div>
+                </div>
+
+                <button class="add-button" onclick="window.location.href='#reservacion'">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="8" cy="21" r="1"></circle>
+                    <circle cx="19" cy="21" r="1"></circle>
+                    <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+                  </svg>
+                  Ordenar
+                </button>
+              </div>
+            </div>
+
+            <div class="decorative-blob"></div>
+          </div>
+        </div>
+
+        <!-- CTA Button -->
+        <div class="footer-cta-menu">
+          <div class="cta-card-menu">
+            <div class="cta-pattern"></div>
+            <div class="cta-content">
+              <h3 class="cta-title">¿Tienes hambre?</h3>
+              <p class="cta-description">
+                Haz tu reservación ahora y disfruta de auténtica comida china
+              </p>
+              <a href="#reservacion" class="cta-button">Ver Menú Completo y Reservar</a>
+            </div>
           </div>
         </div>
       </div>
