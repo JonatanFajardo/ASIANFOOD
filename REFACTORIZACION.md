@@ -8,7 +8,7 @@
 - Muchas utilidades duplicadas
 
 ### Después
-- **jonna-framework-0.7.css**: 2283 líneas (framework completo reutilizable)
+- **jonna-framework-0.8.css**: 2283 líneas (framework completo reutilizable)
 - **style-optimized.css**: ~1400 líneas (solo estilos específicos del sitio)
 - **Reducción**: ~32% menos código específico del proyecto
 - **Beneficio**: Framework reutilizable para futuros proyectos
@@ -34,7 +34,7 @@ Cambia las referencias en `index.html`:
 <!-- global_local -->
 <link rel="stylesheet" href="assets/css/global_local.css" />
 <!-- Jonna Framework - Base CSS Framework -->
-<link rel="stylesheet" href="assets/css/jonna-framework-0.7.css" />
+<link rel="stylesheet" href="assets/css/jonna-framework-0.8.css" />
 <!-- custom css - Estilos específicos del sitio -->
 <link rel="stylesheet" href="assets/css/style-optimized.css" />
 ```
@@ -53,7 +53,7 @@ mv assets/css/style-optimized.css assets/css/style.css
 
 Entonces en el HTML solo necesitarías:
 ```html
-<link rel="stylesheet" href="assets/css/jonna-framework-0.7.css" />
+<link rel="stylesheet" href="assets/css/jonna-framework-0.8.css" />
 <link rel="stylesheet" href="assets/css/style.css" />
 ```
 
@@ -172,7 +172,7 @@ Si quieres usar 100% el framework sin clases custom, cambia estas clases:
 ```
 assets/css/
 ├── global_local.css              # Estilos globales locales
-├── jonna-framework-0.7.css       # Framework CSS base (2283 líneas)
+├── jonna-framework-0.8.css       # Framework CSS base (2283 líneas)
 ├── style-optimized.css           # Estilos específicos del sitio (~1400 líneas)
 └── style.OLD.css                 # Respaldo del original (opcional)
 ```
